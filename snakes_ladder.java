@@ -3,6 +3,7 @@ public class snakes_ladder{
    private void play(){
       System.out.println("Snack and Ladder game played with single player at starts with position 0");
 
+		int count = 0;
 		int up = 0;
 		while( up != 100 )
 		{
@@ -30,6 +31,8 @@ public class snakes_ladder{
 		if (up > 100){
 			up  = up-rolls;
 		}
+		count++;
+			System.out.println("Count the umber of times dice rolles: " +count);
 	}
 }
    public static void main(String[] args){
